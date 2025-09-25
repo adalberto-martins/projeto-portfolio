@@ -3,15 +3,15 @@ const body = document.body;
 
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
-temaEscuro(temasalvo === 'dark-mode');
+temaEscuro(temasalvo === 'escuro');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
   if (tipo == true) {
-    body.classList.add('dark-mode');
+    body.classList.add('escuro');
     botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
-    body.classList.remove('dark-mode');
+    body.classList.remove('escuro');
     botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
   }
 }
